@@ -23,7 +23,7 @@
 </p>
 
 <p align="center">
-  <img alt="Preview do portfólio" src="./assets/preview-portfolio.png" width="100%">
+  <img alt="Preview do portfólio" src="./assets/banner-portfolio.png" width="100%">
 </p>
 
 ---
@@ -36,7 +36,7 @@ Em vez de entregar um portfólio fictício, usei o desafio para criar **o meu po
 
 > **Projeto autoral.** O layout base é da Rocketseat; a implementação, o conteúdo e as melhorias com JavaScript foram feitos por mim, sem acompanhar aula.
 
-🔗 **Deploy:** [em breve](#) <!-- coloque aqui o link do GitHub Pages / Vercel -->
+🔗 **Deploy:** [lpwesley.github.io/lauwer-dev-portfolio](https://lpwesley.github.io/lauwer-dev-portfolio/)
 
 ---
 
