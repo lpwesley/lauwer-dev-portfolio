@@ -1,0 +1,74 @@
+/* Footer / Contact (mobile-first) */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 5rem var(--gutter);
+  text-align: center;
+
+  background: var(--gray-500) url("../assets/images/Background_Contacts.png")
+    center / cover no-repeat;
+}
+
+.contact .section-label {
+  color: var(--purple);
+}
+
+.contact .section-title {
+  margin-bottom: 0.5rem;
+}
+
+.contact-description {
+  max-width: 36rem;
+  margin-bottom: 3rem;
+}
+
+/* Social Links */
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  width: 100%;
+  max-width: 25rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  min-height: 3rem;
+  padding: 1.25rem;
+
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  background-color: var(--gray-400);
+
+  text-align: left;
+  text-decoration: none;
+
+  transition: border-color 0.2s ease;
+}
+
+.social-link[href]:hover,
+.social-link[href]:focus-visible {
+  border-color: var(--blue);
+}
+
+.social-link img {
+  flex-shrink: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+/* Tablet and desktop */
+
+@media (min-width: 36rem) {
+  .contact {
+    padding-block: 8rem 12.5rem;
+  }
+}

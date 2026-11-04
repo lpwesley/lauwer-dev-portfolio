@@ -1,0 +1,126 @@
+/* Projects (mobile-first) */
+
+.projects {
+  padding: 4rem var(--gutter) 5rem;
+  background-color: var(--gray-500);
+  text-align: center;
+}
+
+.projects .section-title {
+  margin-bottom: 2.5rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+
+  max-width: 65rem;
+  margin-inline: auto;
+}
+
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0.75rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  background-color: var(--gray-400);
+  text-align: left;
+  transition: border-color 0.2s ease;
+}
+
+.project-card:hover,
+.project-card:focus-within {
+  border-color: var(--blue);
+}
+
+.project-image {
+  width: 100%;
+  aspect-ratio: 556 / 284;
+  margin-bottom: 1.25rem;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+}
+
+.project-title {
+  margin-bottom: 0.5rem;
+  font: var(--title-sm);
+  color: var(--gray-100);
+}
+
+.project-description {
+  font: var(--text-sm);
+}
+
+/* O link do título cobre o card inteiro (abre o site publicado) */
+
+.project-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.project-link:focus-visible {
+  outline: none;
+}
+
+.project-link:focus-visible::after {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+  border-radius: var(--radius-md);
+}
+
+/* Link secundário para o repositório, acima da área clicável do card */
+
+.project-repo {
+  position: relative;
+  z-index: 1;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  margin-top: auto;
+  padding-top: 0.75rem;
+
+  font: var(--text-sm);
+  color: var(--gray-100);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.project-repo:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* Tablet */
+
+@media (min-width: 40rem) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 60rem) {
+  .projects {
+    padding-block: 4.5rem 9rem;
+  }
+
+  .projects .section-title {
+    margin-bottom: 3.5rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

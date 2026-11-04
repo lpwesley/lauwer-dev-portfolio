@@ -1,24 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Lauwer.Dev | Portfólio</title>
+    <title>Wesley Lauwer | Desenvolvedor Full Stack em formação</title>
+    <meta
+      name="description"
+      content="Portfólio de Wesley Lauwer, desenvolvedor Full Stack em formação. Conheça projetos desenvolvidos com HTML, CSS e JavaScript e os serviços de desenvolvimento web oferecidos."
+    />
+    <meta name="author" content="Wesley Lauwer" />
+    <meta name="theme-color" content="#16181d" />
 
+    <!-- Open Graph (compartilhamento em redes sociais) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Lauwer.Dev" />
+    <meta
+      property="og:title"
+      content="Wesley Lauwer | Desenvolvedor Full Stack em formação"
+    />
+    <meta
+      property="og:description"
+      content="Conheça os projetos e serviços de desenvolvimento web de Wesley Lauwer."
+    />
+    <!-- PENDÊNCIA: após publicar no GitHub Pages, adicionar og:url, og:image
+         (URL absoluta) e <link rel="canonical"> com o endereço definitivo. -->
+
+    <link
+      rel="preload"
+      href="fonts/Asap-Bold.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <!-- Apresentação -->
     <header class="profile">
-      <img class="profile-image" src="assets/images/profile.png" alt="" />
+      <img
+        class="profile-image"
+        src="assets/images/profile.webp"
+        alt="Foto de perfil de Wesley Lauwer"
+        width="336"
+        height="336"
+        fetchpriority="high"
+      />
 
       <p class="profile-intro">
         Hello World! Meu nome é <span>Wesley Lauwer</span> e sou
       </p>
 
-      <h1>Desenvolvedor Full Stack em formação</h1>
+      <h1 class="profile-title">Desenvolvedor Full Stack em formação</h1>
 
       <p class="profile-description">
         Sou apaixonado por tecnologia e estou construindo minha trajetória no
@@ -26,24 +61,29 @@
         minha evolução como desenvolvedor.
       </p>
 
-      <ul class="tech-list">
-        <li>
-          <img src="assets/icons/github.svg" alt="" />
+      <ul class="tech-list" aria-label="Tecnologias que utilizo">
+        <li class="tech-item">
+          <img src="assets/icons/GitHub.svg" alt="" width="32" height="32" />
           <span>GitHub</span>
         </li>
 
-        <li>
-          <img src="assets/icons/html.svg" alt="" />
+        <li class="tech-item">
+          <img src="assets/icons/HTML.svg" alt="" width="24" height="24" />
           <span>HTML</span>
         </li>
 
-        <li>
-          <img src="assets/icons/css.svg" alt="" />
+        <li class="tech-item">
+          <img src="assets/icons/CSS.svg" alt="" width="24" height="24" />
           <span>CSS</span>
         </li>
 
-        <li>
-          <img src="assets/icons/javascript.svg" alt="" />
+        <li class="tech-item">
+          <img
+            src="assets/icons/JavaScript.svg"
+            alt=""
+            width="24"
+            height="24"
+          />
           <span>JavaScript</span>
         </li>
       </ul>
@@ -53,161 +93,370 @@
       <!-- Projetos em destaque -->
       <section class="projects" id="projects">
         <p class="section-label">Meu trabalho</p>
-        <h2>Veja os projetos em destaque</h2>
+        <h2 class="section-title">Veja os projetos em destaque</h2>
+        <ul class="projects-grid">
+          <li>
+            <article class="project-card">
+              <img
+                class="project-image"
+                src="assets/images/pesquisa-culturama.webp"
+                alt="Tela do formulário Pesquisa de Opinião, com campos de dados pessoais."
+                width="556"
+                height="284"
+                loading="lazy"
+              />
+              <h3 class="project-title">
+                <a
+                  class="project-link"
+                  href="https://lpwesley.github.io/pesquisa-culturama/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Ver o site publicado de Pesquisa Culturama (abre em nova aba)"
+                >
+                  Pesquisa Culturama<span class="visually-hidden"> (ver site publicado, abre em nova aba)</span>
+                </a>
+              </h3>
+              <p class="project-description">
+                Formulário de pesquisa desenvolvido com HTML5 e CSS3, explorando
+                campos, estruturação e estilização de formulários.
+              </p>
+              <a
+                class="project-repo"
+                href="https://github.com/lpwesley/pesquisa-culturama"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Ver o código de Pesquisa Culturama no GitHub (abre em nova aba)"
+              >
+                Código no GitHub<span class="visually-hidden">: Pesquisa Culturama (abre em nova aba)</span>
+              </a>
+            </article>
+          </li>
 
-        <div class="projects-grid">
-          <!-- Pesquisa Culturama -->
-          <article class="project-card">
-            <img src="assets/images/pesquisa-culturama.png" alt="" />
+          <li>
+            <article class="project-card">
+              <img
+                class="project-image"
+                src="assets/images/tecboard.webp"
+                alt="Página inicial escura com o título “Fique de olho no que importa”, botão de demonstração e dois celulares."
+                width="556"
+                height="284"
+                loading="lazy"
+              />
+              <h3 class="project-title">
+                <a
+                  class="project-link"
+                  href="https://lpwesley.github.io/tecboard/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Ver o site publicado de Tecboard (abre em nova aba)"
+                >
+                  Tecboard<span class="visually-hidden"> (ver site publicado, abre em nova aba)</span>
+                </a>
+              </h3>
+              <p class="project-description">
+                Landing page desenvolvida com HTML5 e CSS3, aplicando conceitos
+                de estruturação e estilização de interfaces.
+              </p>
+              <a
+                class="project-repo"
+                href="https://github.com/lpwesley/tecboard"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Ver o código de Tecboard no GitHub (abre em nova aba)"
+              >
+                Código no GitHub<span class="visually-hidden">: Tecboard (abre em nova aba)</span>
+              </a>
+            </article>
+          </li>
 
-            <h3>Pesquisa Culturama</h3>
+          <li>
+            <article class="project-card">
+              <img
+                class="project-image"
+                src="assets/images/perfil-viagens.webp"
+                alt="Perfil da rede Travelgram em versões desktop e mobile, com foto, biografia e galeria de viagens."
+                width="556"
+                height="284"
+                loading="lazy"
+              />
+              <h3 class="project-title">
+                <a
+                  class="project-link"
+                  href="https://lpwesley.github.io/perfil-de-viagens/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Ver o site publicado de Perfil de Viagens (abre em nova aba)"
+                >
+                  Perfil de Viagens<span class="visually-hidden"> (ver site publicado, abre em nova aba)</span>
+                </a>
+              </h3>
+              <p class="project-description">
+                Página de perfil de viagens desenvolvida com HTML5 e CSS3,
+                utilizando Flexbox para organização dos elementos.
+              </p>
+              <a
+                class="project-repo"
+                href="https://github.com/lpwesley/perfil-de-viagens"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Ver o código de Perfil de Viagens no GitHub (abre em nova aba)"
+              >
+                Código no GitHub<span class="visually-hidden">: Perfil de Viagens (abre em nova aba)</span>
+              </a>
+            </article>
+          </li>
 
-            <p>
-              Formulário de pesquisa desenvolvido com HTML5 e CSS3, explorando
-              campos, estruturação e estilização de formulários.
-            </p>
-          </article>
+          <li>
+            <article class="project-card">
+              <img
+                class="project-image"
+                src="assets/images/portal-noticias.webp"
+                alt="Portal Tech News com menu de categorias e grade de notícias com destaque principal."
+                width="556"
+                height="284"
+                loading="lazy"
+              />
+              <h3 class="project-title">
+                <a
+                  class="project-link"
+                  href="https://lpwesley.github.io/portal-de-noticias/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Ver o site publicado de Portal de Notícias (abre em nova aba)"
+                >
+                  Portal de Notícias<span class="visually-hidden"> (ver site publicado, abre em nova aba)</span>
+                </a>
+              </h3>
+              <p class="project-description">
+                Portal de notícias desenvolvido com HTML5 e CSS3, utilizando CSS
+                Grid para estruturar o conteúdo.
+              </p>
+              <a
+                class="project-repo"
+                href="https://github.com/lpwesley/portal-de-noticias"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Ver o código de Portal de Notícias no GitHub (abre em nova aba)"
+              >
+                Código no GitHub<span class="visually-hidden">: Portal de Notícias (abre em nova aba)</span>
+              </a>
+            </article>
+          </li>
 
-          <!-- Tecboard -->
-          <article class="project-card">
-            <img src="assets/images/tecboard.png" alt="" />
+          <li>
+            <article class="project-card">
+              <img
+                class="project-image"
+                src="assets/images/local-turistico.webp"
+                alt="Página “Conheça Busan” com foto noturna da cidade e de uma ponte iluminada."
+                width="556"
+                height="284"
+                loading="lazy"
+              />
+              <h3 class="project-title">
+                <a
+                  class="project-link"
+                  href="https://lpwesley.github.io/local-turistico/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Ver o site publicado de Local Turístico (abre em nova aba)"
+                >
+                  Local Turístico<span class="visually-hidden"> (ver site publicado, abre em nova aba)</span>
+                </a>
+              </h3>
+              <p class="project-description">
+                Página de apresentação de um destino turístico, desenvolvida com
+                HTML semântico e CSS3.
+              </p>
+              <a
+                class="project-repo"
+                href="https://github.com/lpwesley/local-turistico"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Ver o código de Local Turístico no GitHub (abre em nova aba)"
+              >
+                Código no GitHub<span class="visually-hidden">: Local Turístico (abre em nova aba)</span>
+              </a>
+            </article>
+          </li>
 
-            <h3>Tecboard</h3>
-
-            <p>
-              Landing page desenvolvida com HTML5 e CSS3, aplicando conceitos de
-              estruturação e estilização de interfaces.
-            </p>
-          </article>
-
-          <!-- Perfil de Viagens -->
-          <article class="project-card">
-            <img src="assets/images/perfil-de-viagens.png" alt="" />
-
-            <h3>Perfil de Viagens</h3>
-
-            <p>
-              Página de perfil de viagens desenvolvida com HTML5 e CSS3,
-              utilizando Flexbox para organização dos elementos.
-            </p>
-          </article>
-
-          <!-- Portal de Notícias -->
-          <article class="project-card">
-            <img src="assets/images/portal-de-noticias.png" alt="" />
-
-            <h3>Portal de Notícias</h3>
-
-            <p>
-              Portal de notícias desenvolvido com HTML5 e CSS3, utilizando CSS
-              Grid para estruturar o conteúdo.
-            </p>
-          </article>
-
-          <!-- Local Turístico -->
-          <article class="project-card">
-            <img src="assets/images/local-turistico.png" alt="" />
-
-            <h3>Local Turístico</h3>
-
-            <p>
-              Página de apresentação de um destino turístico, desenvolvida com
-              HTML semântico e CSS3.
-            </p>
-          </article>
-
-          <!-- Quicklist -->
-          <article class="project-card">
-            <img src="assets/images/quicklist.png" alt="" />
-
-            <h3>Quicklist</h3>
-
-            <p>
-              Lista de compras interativa desenvolvida com HTML5, CSS3 e
-              JavaScript, permitindo adicionar e remover itens.
-            </p>
-          </article>
-        </div>
+          <li>
+            <article class="project-card">
+              <img
+                class="project-image"
+                src="assets/images/quicklist.webp"
+                alt="Lista “Compras da semana” com campo para adicionar itens e itens marcáveis."
+                width="556"
+                height="284"
+                loading="lazy"
+              />
+              <h3 class="project-title">
+                <a
+                  class="project-link"
+                  href="https://lpwesley.github.io/quicklist/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Ver o site publicado de Quicklist (abre em nova aba)"
+                >
+                  Quicklist<span class="visually-hidden"> (ver site publicado, abre em nova aba)</span>
+                </a>
+              </h3>
+              <p class="project-description">
+                Lista de compras interativa desenvolvida com HTML5, CSS3 e
+                JavaScript, permitindo adicionar e remover itens.
+              </p>
+              <a
+                class="project-repo"
+                href="https://github.com/lpwesley/quicklist"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Ver o código de Quicklist no GitHub (abre em nova aba)"
+              >
+                Código no GitHub<span class="visually-hidden">: Quicklist (abre em nova aba)</span>
+              </a>
+            </article>
+          </li>
+        </ul>
       </section>
 
       <!-- Serviços -->
       <section class="services" id="services">
         <p class="section-label">Meus serviços</p>
-        <h2>Como posso ajudar o seu negócio</h2>
+        <h2 class="section-title">Como posso ajudar o seu negócio</h2>
 
-        <div class="services-grid">
-          <article class="service-card">
-            <img src="assets/icons/web.svg" alt="" />
-
-            <h3>Sites e Landing Pages</h3>
-
-            <p>
+        <ul class="services-grid">
+          <li class="service-card">
+            <img
+              class="service-icon"
+              src="assets/icons/web.svg"
+              alt=""
+              width="48"
+              height="48"
+              loading="lazy"
+            />
+            <h3 class="service-title">Sites e Landing Pages</h3>
+            <p class="service-description">
               Desenvolvimento de páginas para apresentar negócios, serviços e
               produtos na internet.
             </p>
-          </article>
+          </li>
 
-          <article class="service-card">
-            <img src="assets/icons/devices.svg" alt="" />
-
-            <h3>Interfaces Responsivas</h3>
-
-            <p>
+          <li class="service-card">
+            <img
+              class="service-icon"
+              src="assets/icons/devices.svg"
+              alt=""
+              width="48"
+              height="48"
+              loading="lazy"
+            />
+            <h3 class="service-title">Interfaces Responsivas</h3>
+            <p class="service-description">
               Criação de interfaces adaptadas para celulares, tablets e
               computadores.
             </p>
-          </article>
+          </li>
 
-          <article class="service-card">
-            <img src="assets/icons/code.svg" alt="" />
-
-            <h3>Desenvolvimento Web</h3>
-
-            <p>
+          <li class="service-card">
+            <img
+              class="service-icon"
+              src="assets/icons/code.svg"
+              alt=""
+              width="48"
+              height="48"
+              loading="lazy"
+            />
+            <h3 class="service-title">Desenvolvimento Web</h3>
+            <p class="service-description">
               Construção de páginas web utilizando tecnologias e boas práticas
               de desenvolvimento.
             </p>
-          </article>
-        </div>
+          </li>
+        </ul>
       </section>
     </main>
 
     <!-- Contato -->
     <footer class="contact" id="contact">
       <p class="section-label">Contato</p>
+      <h2 class="section-title">Gostou do meu trabalho?</h2>
 
-      <h2>Gostou do meu trabalho?</h2>
-
-      <p>
+      <p class="contact-description">
         Entre em contato ou acompanhe minhas redes sociais para conhecer mais
         sobre meus projetos.
       </p>
 
       <ul class="social-links">
         <li>
-          <a href="#">
-            <img src="assets/icons/linkedin.svg" alt="" />
-            <span>LinkedIn</span>
+          <a
+            class="social-link"
+            href="https://www.linkedin.com/in/wesleylauwer/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Perfil de Wesley Lauwer no LinkedIn (abre em nova aba)"
+          >
+            <img
+              src="assets/icons/linkedin.svg"
+              alt=""
+              width="28"
+              height="28"
+              loading="lazy"
+            />
+            <span>LinkedIn<span class="visually-hidden"> (abre em nova aba)</span></span>
           </a>
         </li>
 
         <li>
-          <a href="#">
-            <img src="assets/icons/instagram.svg" alt="" />
-            <span>Instagram</span>
+          <a
+            class="social-link"
+            href="https://www.instagram.com/lauwer.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Perfil @lauwer.dev no Instagram (abre em nova aba)"
+          >
+            <img
+              src="assets/icons/instagram.svg"
+              alt=""
+              width="28"
+              height="28"
+              loading="lazy"
+            />
+            <span>Instagram<span class="visually-hidden"> (abre em nova aba)</span></span>
           </a>
         </li>
 
         <li>
-          <a href="#">
-            <img src="assets/icons/github.svg" alt="" />
-            <span>GitHub</span>
+          <a
+            class="social-link"
+            href="https://github.com/lpwesley"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Perfil de Wesley Lauwer no GitHub (abre em nova aba)"
+          >
+            <img
+              src="assets/icons/github.svg"
+              alt=""
+              width="28"
+              height="28"
+              loading="lazy"
+            />
+            <span>GitHub<span class="visually-hidden"> (abre em nova aba)</span></span>
           </a>
         </li>
 
         <li>
-          <a href="#">
-            <img src="assets/icons/email.svg" alt="" />
+          <a
+            class="social-link"
+            href="mailto:wesleylauwer68@gmail.com"
+            title="Enviar e-mail para wesleylauwer68@gmail.com"
+          >
+            <img
+              src="assets/icons/email.svg"
+              alt=""
+              width="28"
+              height="28"
+              loading="lazy"
+            />
             <span>E-mail</span>
           </a>
         </li>

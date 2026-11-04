@@ -1,0 +1,63 @@
+/* Services (mobile-first) */
+
+.services {
+  padding: 4rem var(--gutter) 5rem;
+  background-color: var(--gray-600);
+  text-align: center;
+}
+
+.services .section-title {
+  margin-bottom: 2.5rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+
+  max-width: 55.5rem;
+  margin-inline: auto;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+
+  padding: 1.25rem;
+  border: 2px solid var(--gray-500);
+  border-radius: var(--radius-md);
+  text-align: left;
+}
+
+.service-icon {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 0.75rem;
+}
+
+.service-title {
+  font: var(--title-sm);
+  color: var(--gray-100);
+}
+
+.service-description {
+  font: var(--text-sm);
+}
+
+/* Tablet and desktop */
+
+@media (min-width: 48rem) {
+  .services {
+    padding-block: 5.5rem 7.5rem;
+  }
+
+  .services .section-title {
+    margin-bottom: 3.5rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

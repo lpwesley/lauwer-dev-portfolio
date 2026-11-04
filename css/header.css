@@ -1,0 +1,100 @@
+/* Header (mobile-first) */
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 4.5rem var(--gutter) 3rem;
+  text-align: center;
+
+  background: var(--gray-500) url("../assets/images/Background_Intro.png")
+    center / cover no-repeat;
+}
+
+/* Profile Image */
+
+.profile-image {
+  width: 7rem;
+  height: 7rem;
+  margin-bottom: 2.5rem;
+  padding: 0.25rem;
+
+  border: 2px solid var(--red);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Profile Texts */
+
+.profile-intro {
+  margin-bottom: 0.5rem;
+  font: var(--subtitle);
+  font-size: 1.125rem;
+}
+
+.profile-intro span {
+  color: var(--red);
+}
+
+.profile-title {
+  max-width: 50rem;
+  margin-bottom: 1.25rem;
+
+  font: var(--title-lg);
+  font-size: clamp(2rem, 1.25rem + 3.75vw, 3.5rem);
+  color: var(--gray-100);
+  overflow-wrap: break-word;
+}
+
+.profile-description {
+  max-width: 42.5rem;
+  font: var(--text-sm);
+}
+
+/* Technologies */
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+
+  margin-top: 3rem;
+}
+
+.tech-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  background-color: var(--gray-400);
+}
+
+.tech-item img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Tablet and desktop */
+
+@media (min-width: 48rem) {
+  .profile {
+    padding-block: 7.5rem 3.5rem;
+  }
+
+  .profile-image {
+    margin-bottom: 3.5rem;
+  }
+
+  .profile-intro {
+    font: var(--subtitle);
+  }
+
+  .tech-list {
+    gap: 1rem;
+    margin-top: 5rem;
+  }
+}
